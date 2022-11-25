@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "Find Max3 a b c"
+i=0
+max=$1
+for num in $1 $2 $3; do 
+	if [ $num -gt $max ]; then
+		max=$num
+	fi
+done
+echo "max = $max"
+exit 0
